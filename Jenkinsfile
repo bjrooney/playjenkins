@@ -2,7 +2,7 @@ pipeline {
 
     agent {
     kubernetes {
-      label 'kubepod'
+      label 'test'
       defaultContainer 'jnlp'
       yaml """
 apiVersion: v1
@@ -25,7 +25,7 @@ spec:
 
     stage('Checkout Source') {
       steps {
-          container('golang') {
+          container('test') {
                    git url:'https://github.com/justmeandopensource/playjenkins.git', branch:'test-deploy-stage'
           }
       }
