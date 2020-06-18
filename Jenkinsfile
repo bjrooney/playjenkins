@@ -2,7 +2,7 @@ pipeline {
 
     agent {
     kubernetes {
-      label 'sample-app'
+      label 'kubepod'
       defaultContainer 'jnlp'
       yaml """
 apiVersion: v1
