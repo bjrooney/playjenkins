@@ -12,8 +12,8 @@ labels:
   component: test
 spec:
   containers:
-  - name: golang
-    image: golang:1.10
+  - name: node
+    image: node:latest
     command:
     - cat
     tty: true
