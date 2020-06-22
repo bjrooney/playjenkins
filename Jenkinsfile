@@ -1,6 +1,6 @@
 pipeline {
 
-  agent { label 'jenkins-jenkins-slave' }
+  agent { label 'cloudbees-cloudbees-jenkins-distribution-agent ' }
 
   stages {
 
